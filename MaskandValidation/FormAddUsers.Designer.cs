@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button2 = new System.Windows.Forms.Button();
+            this.loginTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.passwordTextBox2 = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.second_NameText = new System.Windows.Forms.TextBox();
+            this.First_NameTextBox = new System.Windows.Forms.TextBox();
+            this.ButtonAdd = new System.Windows.Forms.Button();
+            this.roleIDComboBox = new System.Windows.Forms.ComboBox();
+            this.radioButtonMen = new System.Windows.Forms.RadioButton();
+            this.radioButtonWoman = new System.Windows.Forms.RadioButton();
+            this.ButtonBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,108 +51,107 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.PhonemaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // loginTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(166, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 20);
-            this.textBox1.TabIndex = 0;
+            this.loginTextBox.Location = new System.Drawing.Point(166, 92);
+            this.loginTextBox.Name = "loginTextBox";
+            this.loginTextBox.Size = new System.Drawing.Size(146, 20);
+            this.loginTextBox.TabIndex = 0;
             // 
-            // textBox3
+            // emailTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(166, 215);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(146, 20);
-            this.textBox3.TabIndex = 2;
+            this.emailTextBox.Location = new System.Drawing.Point(166, 215);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(146, 20);
+            this.emailTextBox.TabIndex = 2;
             // 
-            // textBox4
+            // passwordTextBox2
             // 
-            this.textBox4.Location = new System.Drawing.Point(166, 170);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.PasswordChar = '*';
-            this.textBox4.Size = new System.Drawing.Size(146, 20);
-            this.textBox4.TabIndex = 3;
+            this.passwordTextBox2.Location = new System.Drawing.Point(166, 170);
+            this.passwordTextBox2.Name = "passwordTextBox2";
+            this.passwordTextBox2.PasswordChar = '*';
+            this.passwordTextBox2.Size = new System.Drawing.Size(146, 20);
+            this.passwordTextBox2.TabIndex = 3;
             // 
-            // textBox5
+            // passwordTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(166, 128);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.PasswordChar = '*';
-            this.textBox5.Size = new System.Drawing.Size(146, 20);
-            this.textBox5.TabIndex = 4;
+            this.passwordTextBox.Location = new System.Drawing.Point(166, 128);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
+            this.passwordTextBox.Size = new System.Drawing.Size(146, 20);
+            this.passwordTextBox.TabIndex = 4;
             // 
-            // textBox6
+            // second_NameText
             // 
-            this.textBox6.Location = new System.Drawing.Point(576, 128);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(121, 20);
-            this.textBox6.TabIndex = 5;
+            this.second_NameText.Location = new System.Drawing.Point(576, 128);
+            this.second_NameText.Name = "second_NameText";
+            this.second_NameText.Size = new System.Drawing.Size(121, 20);
+            this.second_NameText.TabIndex = 5;
             // 
-            // textBox7
+            // First_NameTextBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(576, 92);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(121, 20);
-            this.textBox7.TabIndex = 6;
+            this.First_NameTextBox.Location = new System.Drawing.Point(576, 92);
+            this.First_NameTextBox.Name = "First_NameTextBox";
+            this.First_NameTextBox.Size = new System.Drawing.Size(121, 20);
+            this.First_NameTextBox.TabIndex = 6;
             // 
-            // button1
+            // ButtonAdd
             // 
-            this.button1.Location = new System.Drawing.Point(622, 400);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ButtonAdd.Location = new System.Drawing.Point(622, 400);
+            this.ButtonAdd.Name = "ButtonAdd";
+            this.ButtonAdd.Size = new System.Drawing.Size(75, 23);
+            this.ButtonAdd.TabIndex = 7;
+            this.ButtonAdd.Text = "Добавить";
+            this.ButtonAdd.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // roleIDComboBox
             // 
-            this.comboBox1.DataSource = this.bindingSource1;
-            this.comboBox1.DisplayMember = "Name";
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(576, 215);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 8;
-            this.comboBox1.ValueMember = "ID";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.roleIDComboBox.DataSource = this.bindingSource1;
+            this.roleIDComboBox.DisplayMember = "Name";
+            this.roleIDComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.roleIDComboBox.FormattingEnabled = true;
+            this.roleIDComboBox.Location = new System.Drawing.Point(576, 215);
+            this.roleIDComboBox.Name = "roleIDComboBox";
+            this.roleIDComboBox.Size = new System.Drawing.Size(121, 21);
+            this.roleIDComboBox.TabIndex = 8;
+            this.roleIDComboBox.ValueMember = "ID";
+            this.roleIDComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // radioButton1
+            // radioButtonMen
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(530, 320);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(71, 17);
-            this.radioButton1.TabIndex = 9;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Мужской";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButtonMen.AutoSize = true;
+            this.radioButtonMen.Checked = true;
+            this.radioButtonMen.Location = new System.Drawing.Point(530, 320);
+            this.radioButtonMen.Name = "radioButtonMen";
+            this.radioButtonMen.Size = new System.Drawing.Size(71, 17);
+            this.radioButtonMen.TabIndex = 9;
+            this.radioButtonMen.TabStop = true;
+            this.radioButtonMen.Text = "Мужской";
+            this.radioButtonMen.UseVisualStyleBackColor = true;
+            this.radioButtonMen.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // radioButton2
+            // radioButtonWoman
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(641, 320);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(72, 17);
-            this.radioButton2.TabIndex = 10;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Женский";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonWoman.AutoSize = true;
+            this.radioButtonWoman.Location = new System.Drawing.Point(641, 320);
+            this.radioButtonWoman.Name = "radioButtonWoman";
+            this.radioButtonWoman.Size = new System.Drawing.Size(72, 17);
+            this.radioButtonWoman.TabIndex = 10;
+            this.radioButtonWoman.Text = "Женский";
+            this.radioButtonWoman.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // ButtonBack
             // 
-            this.button2.Location = new System.Drawing.Point(34, 34);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 28);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Назад";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ButtonBack.Location = new System.Drawing.Point(34, 34);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(90, 28);
+            this.ButtonBack.TabIndex = 11;
+            this.ButtonBack.Text = "Назад";
+            this.ButtonBack.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -249,20 +248,20 @@
             // 
             this.bindingSource1.DataSource = typeof(MaskandValidation.DBContext.Roles);
             // 
-            // maskedTextBox1
+            // PhonemaskedTextBox
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(166, 263);
-            this.maskedTextBox1.Mask = "+7 (000) 000-00-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(146, 20);
-            this.maskedTextBox1.TabIndex = 22;
+            this.PhonemaskedTextBox.Location = new System.Drawing.Point(166, 263);
+            this.PhonemaskedTextBox.Mask = "+7 (000) 000-00-00";
+            this.PhonemaskedTextBox.Name = "PhonemaskedTextBox";
+            this.PhonemaskedTextBox.Size = new System.Drawing.Size(146, 20);
+            this.PhonemaskedTextBox.TabIndex = 22;
             // 
             // FormAddUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.PhonemaskedTextBox);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -273,17 +272,17 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ButtonBack);
+            this.Controls.Add(this.radioButtonWoman);
+            this.Controls.Add(this.radioButtonMen);
+            this.Controls.Add(this.roleIDComboBox);
+            this.Controls.Add(this.ButtonAdd);
+            this.Controls.Add(this.First_NameTextBox);
+            this.Controls.Add(this.second_NameText);
+            this.Controls.Add(this.passwordTextBox);
+            this.Controls.Add(this.passwordTextBox2);
+            this.Controls.Add(this.emailTextBox);
+            this.Controls.Add(this.loginTextBox);
             this.Name = "FormAddUsers";
             this.Text = "FormAddUsers";
             this.Load += new System.EventHandler(this.FormAddUsers_Load);
@@ -295,17 +294,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox loginTextBox;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.TextBox passwordTextBox2;
+        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.TextBox second_NameText;
+        private System.Windows.Forms.TextBox First_NameTextBox;
+        private System.Windows.Forms.Button ButtonAdd;
+        private System.Windows.Forms.ComboBox roleIDComboBox;
+        private System.Windows.Forms.RadioButton radioButtonMen;
+        private System.Windows.Forms.RadioButton radioButtonWoman;
+        private System.Windows.Forms.Button ButtonBack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -317,6 +316,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox PhonemaskedTextBox;
     }
 }

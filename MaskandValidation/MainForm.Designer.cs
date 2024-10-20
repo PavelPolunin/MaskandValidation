@@ -63,6 +63,7 @@
             this.buttonadd.TabIndex = 2;
             this.buttonadd.Text = "Добавить";
             this.buttonadd.UseVisualStyleBackColor = false;
+            this.buttonadd.Click += new System.EventHandler(this.buttonadd_Click_1);
             // 
             // MainForm
             // 
@@ -74,6 +75,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
